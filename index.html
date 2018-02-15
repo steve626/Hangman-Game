@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DC Hangman</title>
+  <link rel="stylesheet" type="text/css" href="assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Kalam|Permanent+Marker" rel="stylesheet">
+  
+</head>
+<body onload="startUp()">
+
+    <div id="title">
+
+        <h2>DC UNIVERSE</h2>
+        <br>
+        <h1>HANGMAN</h1> 
+        <br><br>
+    </div>
+
+    <!-- boxes with play area and image display -->
+    <container id="game">
+        <!--wins with box, player name?-->
+        <p id="winNo">number of wins:</p>
+        <p id="winsBox">
+                <form>
+                    <label for="wins">wins</label>
+                    <input type="text" id="counter" name="wins">
+                        
+                </form>
+        </p>
+        <br>
+        <br>
+        <h3>Enter your guess here:</h3>
+        <input id="letter" type="text">
+        <input type="button" value="letter" onClick="letter()"/>
+        <br>
+           <!--current word:-->
+           <p id="answer"></p>
+
+        <!--space to show the current game/word -->
+        <p id="answerArray"></p>
+
+        <br>
+        
+
+
+        <p id="counter"> number of wrong guesses remaining: </p>
+        <p id="stat"></p>
+        <br>
+
+        <!--area for letters to appear-->
+
+        <!-- table of already guessed letters-->
+        <p id="wrong guesses:"></p>
+
+   
+
+    <!-- number of  wrong guesses remaining (start w/ 13)-->
+  
+    </container>
+    <container id="winImage">
+
+
+    </container>
+    <!--add image of word-->
+
+    <script src="assets/game2.js"></script>
+
+</body>
+
